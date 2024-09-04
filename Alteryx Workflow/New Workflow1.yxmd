@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\* Contoso Data.xlsx|||`FACT Sales$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>True</FirstRowData>
+            <ImportLine>3</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>* Contoso Data.xlsx
+Query=`FACT Sales$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F2" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F3" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F4" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F5" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F6" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F7" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F8" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F9" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F10" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F11" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F12" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F13" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F14" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F15" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F16" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="F17" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="F1" />
+            <Field name="F2" />
+            <Field name="F3" />
+            <Field name="F4" />
+            <Field name="F5" />
+            <Field name="F6" />
+            <Field name="F7" />
+            <Field name="F8" />
+            <Field name="F9" />
+            <Field name="F10" />
+            <Field name="F11" />
+            <Field name="F12" />
+            <Field name="F13" />
+            <Field name="F14" />
+            <Field name="F15" />
+            <Field name="F16" />
+            <Field name="F17" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SalesKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="DateKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="channelKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="StoreKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="ProductKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="PromotionKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="UnitCost" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="UnitPrice" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="SalesQuantity" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="ReturnQuantity" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="ReturnAmount" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="DiscountQuantity" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="DiscountAmount" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="TotalCost" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="SalesAmount" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="GeographyKey" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+            <Field name="Date" size="255" source="File: C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\2014 Contoso Data.xlsx|||`FACT Sales$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Vandhana\AppData\Local\Temp\Alteryx\Engine_18408_e33338bafec14a10b25496d47588fa67_\Engine_18408_85bd2a55355b4d478553c52ffba49d40~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TotalCost" selected="True" type="Int16" size="2" />
+            <SelectField field="SalesAmount" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="498" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>channelKey</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-06-30 09:44:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2024-06-30 09:44:43</StartDate>
+              <EndDate>2024-06-30 09:44:43</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[channelKey] = "1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="642" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\Vandhana\Documents\iim skills\Alteryx\Class_1\file.xlsx|||Final_sales</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>file.xlsx
+Query=Final_sales</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="86255044-9e4a-456a-8cf7-210a94761ea7" />
+      <Telemetry>
+        <PreviousWorkflowId value="a1f41e74-b0b9-4e3b-870a-159b472952f3" />
+        <OriginWorkflowId value="a1f41e74-b0b9-4e3b-870a-159b472952f3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
