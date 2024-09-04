@@ -1,0 +1,929 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="True" FileFormat="25">D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\* Contoso Data.xlsx|||`FACT Sales$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>2</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>* Contoso Data.xlsx
+Query=`FACT Sales$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SalesKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="DateKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="channelKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="StoreKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="ProductKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="PromotionKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="UnitCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="UnitPrice" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="SalesQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="ReturnQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="ReturnAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="DiscountQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="DiscountAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="TotalCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="SalesAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="GeographyKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="Date" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SalesKey" selected="False" type="Int16" size="2" />
+            <SelectField field="DateKey" selected="False" type="Int16" size="2" />
+            <SelectField field="channelKey" selected="True" type="Int32" size="4" />
+            <SelectField field="StoreKey" selected="False" type="Int16" size="2" />
+            <SelectField field="ProductKey" selected="True" type="Int32" size="4" />
+            <SelectField field="PromotionKey" selected="False" type="Int16" size="2" />
+            <SelectField field="UnitCost" selected="True" type="Float" size="4" />
+            <SelectField field="UnitPrice" selected="True" type="Float" size="4" />
+            <SelectField field="SalesQuantity" selected="True" type="Int32" size="4" />
+            <SelectField field="ReturnQuantity" selected="True" type="Int32" size="4" />
+            <SelectField field="ReturnAmount" selected="True" />
+            <SelectField field="DiscountQuantity" selected="True" type="Int32" size="4" />
+            <SelectField field="DiscountAmount" selected="True" />
+            <SelectField field="TotalCost" selected="True" />
+            <SelectField field="SalesAmount" selected="True" />
+            <SelectField field="GeographyKey" selected="True" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Channel$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contoso Lookup Tables.xlsx
+Query=`DIM Channel$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ChannelKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Channel$`" type="Double" />
+            <Field name="ChannelName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Channel$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ChannelKey" selected="True" type="Int32" size="4" />
+            <SelectField field="ChannelName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contoso Lookup Tables.xlsx
+Query=`DIM Product$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+            <Field name="ProductName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ProductDescription" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_WString" />
+            <Field name="ProductSubcategoryKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+            <Field name="Manufacturer" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="BrandName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ClassName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ColorName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="Size" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="SizeRange" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="Weight" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+            <Field name="WeightUnitMeasureID" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="UnitCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+            <Field name="UnitPrice" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductKey" selected="True" type="Int32" size="4" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductDescription" selected="True" />
+            <SelectField field="ProductSubcategoryKey" selected="True" type="Int32" size="4" />
+            <SelectField field="Manufacturer" selected="True" />
+            <SelectField field="BrandName" selected="True" />
+            <SelectField field="ClassName" selected="True" />
+            <SelectField field="ColorName" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="SizeRange" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="WeightUnitMeasureID" selected="True" />
+            <SelectField field="UnitCost" selected="True" type="Float" size="4" />
+            <SelectField field="UnitPrice" selected="True" type="Float" size="4" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="channelKey" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ChannelKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductKey" selected="True" input="Left_" />
+                <SelectField field="Left_UnitCost" selected="True" input="Left_" />
+                <SelectField field="Left_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Left_SalesQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnAmount" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountAmount" selected="True" input="Left_" />
+                <SelectField field="Left_TotalCost" selected="True" input="Left_" />
+                <SelectField field="Left_SalesAmount" selected="True" input="Left_" />
+                <SelectField field="Left_GeographyKey" selected="True" input="Left_" />
+                <SelectField field="Left_Date" selected="True" input="Left_" />
+                <SelectField field="Right_ChannelKey" selected="False" rename="Right_ChannelKey" input="Right_" />
+                <SelectField field="Right_ChannelName" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="630" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductKey" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_UnitCost" selected="True" input="Left_" />
+                <SelectField field="Left_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Left_SalesQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnAmount" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountAmount" selected="True" input="Left_" />
+                <SelectField field="Left_TotalCost" selected="True" input="Left_" />
+                <SelectField field="Left_SalesAmount" selected="True" input="Left_" />
+                <SelectField field="Left_GeographyKey" selected="True" input="Left_" />
+                <SelectField field="Left_Date" selected="True" input="Left_" />
+                <SelectField field="Left_ChannelName" selected="True" input="Left_" />
+                <SelectField field="Right_ProductKey" selected="False" rename="Right_ProductKey" input="Right_" />
+                <SelectField field="Right_ProductName" selected="True" input="Right_" />
+                <SelectField field="Right_ProductDescription" selected="True" input="Right_" />
+                <SelectField field="Right_ProductSubcategoryKey" selected="True" input="Right_" />
+                <SelectField field="Right_Manufacturer" selected="True" input="Right_" />
+                <SelectField field="Right_BrandName" selected="True" input="Right_" />
+                <SelectField field="Right_ClassName" selected="True" input="Right_" />
+                <SelectField field="Right_ColorName" selected="True" input="Right_" />
+                <SelectField field="Right_Size" selected="True" input="Right_" />
+                <SelectField field="Right_SizeRange" selected="True" input="Right_" />
+                <SelectField field="Right_Weight" selected="True" input="Right_" />
+                <SelectField field="Right_WeightUnitMeasureID" selected="True" input="Right_" />
+                <SelectField field="Right_UnitCost" selected="True" rename="Right_UnitCost" input="Right_" />
+                <SelectField field="Right_UnitPrice" selected="True" rename="Right_UnitPrice" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contoso Lookup Tables.xlsx
+Query=`DIM Geography$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GeographyKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="Double" />
+            <Field name="ContinentName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="CityName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="StateProvinceName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="RegionCountryName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GeographyKey" selected="True" type="Int32" size="4" />
+            <SelectField field="ContinentName" selected="True" />
+            <SelectField field="CityName" selected="True" />
+            <SelectField field="StateProvinceName" selected="True" />
+            <SelectField field="RegionCountryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="654" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="GeographyKey" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="GeographyKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_UnitCost" selected="True" input="Left_" />
+                <SelectField field="Left_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Left_SalesQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_ReturnAmount" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountQuantity" selected="True" input="Left_" />
+                <SelectField field="Left_DiscountAmount" selected="True" input="Left_" />
+                <SelectField field="Left_TotalCost" selected="True" input="Left_" />
+                <SelectField field="Left_SalesAmount" selected="True" input="Left_" />
+                <SelectField field="Left_Date" selected="True" input="Left_" />
+                <SelectField field="Left_ChannelName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductDescription" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryKey" selected="True" input="Left_" />
+                <SelectField field="Left_Manufacturer" selected="True" input="Left_" />
+                <SelectField field="Left_BrandName" selected="True" input="Left_" />
+                <SelectField field="Left_ClassName" selected="True" input="Left_" />
+                <SelectField field="Left_ColorName" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeRange" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureID" selected="True" input="Left_" />
+                <SelectField field="Left_Right_UnitCost" selected="True" input="Left_" />
+                <SelectField field="Left_Right_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Right_GeographyKey" selected="False" rename="Right_GeographyKey" input="Right_" />
+                <SelectField field="Right_ContinentName" selected="True" input="Right_" />
+                <SelectField field="Right_CityName" selected="True" input="Right_" />
+                <SelectField field="Right_StateProvinceName" selected="True" input="Right_" />
+                <SelectField field="Right_RegionCountryName" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="channelKey" selected="True" />
+            <SelectField field="ProductKey" selected="True" />
+            <SelectField field="UnitCost" selected="True" />
+            <SelectField field="UnitPrice" selected="True" />
+            <SelectField field="SalesQuantity" selected="True" />
+            <SelectField field="ReturnQuantity" selected="True" />
+            <SelectField field="ReturnAmount" selected="True" />
+            <SelectField field="DiscountQuantity" selected="True" />
+            <SelectField field="DiscountAmount" selected="True" />
+            <SelectField field="TotalCost" selected="True" />
+            <SelectField field="SalesAmount" selected="True" />
+            <SelectField field="GeographyKey" selected="True" type="Int32" size="4" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Right_ChannelKey" selected="True" />
+            <SelectField field="ChannelName" selected="True" />
+            <SelectField field="Right_ProductKey" selected="True" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductDescription" selected="True" />
+            <SelectField field="ProductSubcategoryKey" selected="True" />
+            <SelectField field="Manufacturer" selected="True" />
+            <SelectField field="BrandName" selected="True" />
+            <SelectField field="ClassName" selected="True" />
+            <SelectField field="ColorName" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="SizeRange" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="WeightUnitMeasureID" selected="True" />
+            <SelectField field="Right_UnitCost" selected="True" />
+            <SelectField field="Right_UnitPrice" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="474" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Name" />
+            <Field name="Today Date" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Roshan Khulat</c>
+              <c>01-09-2024</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="786" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_UnitCost" selected="True" input="Target_" />
+                <SelectField field="Target_UnitPrice" selected="True" input="Target_" />
+                <SelectField field="Target_SalesQuantity" selected="True" input="Target_" />
+                <SelectField field="Target_ReturnQuantity" selected="True" input="Target_" />
+                <SelectField field="Target_ReturnAmount" selected="True" input="Target_" />
+                <SelectField field="Target_DiscountQuantity" selected="True" input="Target_" />
+                <SelectField field="Target_DiscountAmount" selected="True" input="Target_" />
+                <SelectField field="Target_TotalCost" selected="True" input="Target_" />
+                <SelectField field="Target_SalesAmount" selected="True" input="Target_" />
+                <SelectField field="Target_Date" selected="True" input="Target_" />
+                <SelectField field="Target_ChannelName" selected="True" input="Target_" />
+                <SelectField field="Target_ProductName" selected="True" input="Target_" />
+                <SelectField field="Target_ProductDescription" selected="True" input="Target_" />
+                <SelectField field="Target_ProductSubcategoryKey" selected="True" input="Target_" />
+                <SelectField field="Target_Manufacturer" selected="True" input="Target_" />
+                <SelectField field="Target_BrandName" selected="True" input="Target_" />
+                <SelectField field="Target_ClassName" selected="True" input="Target_" />
+                <SelectField field="Target_ColorName" selected="True" input="Target_" />
+                <SelectField field="Target_Size" selected="True" input="Target_" />
+                <SelectField field="Target_SizeRange" selected="True" input="Target_" />
+                <SelectField field="Target_Weight" selected="True" input="Target_" />
+                <SelectField field="Target_WeightUnitMeasureID" selected="True" input="Target_" />
+                <SelectField field="Target_Right_UnitCost" selected="True" input="Target_" />
+                <SelectField field="Target_Right_UnitPrice" selected="True" input="Target_" />
+                <SelectField field="Target_ContinentName" selected="True" input="Target_" />
+                <SelectField field="Target_CityName" selected="True" input="Target_" />
+                <SelectField field="Target_StateProvinceName" selected="True" input="Target_" />
+                <SelectField field="Target_RegionCountryName" selected="True" input="Target_" />
+                <SelectField field="Source_Name" selected="True" input="Source_" />
+                <SelectField field="Source_Today Date" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="870" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ContinentName] = "Asia" AND [ChannelName] = "Online" or [ChannelName] = "Store" AND 
+[SalesAmount] &gt; 1000</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ContinentName] = "Asia" AND [ChannelName] = "Online" or [ChannelName] = "Store"...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="1026" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (297)">UnitCost=False,UnitPrice=False,SalesQuantity=False,ReturnQuantity=False,ReturnAmount=False,DiscountQuantity=False,DiscountAmount=False,TotalCost=False,SalesAmount=True,ProductSubcategoryKey=False,Weight=False,Right_UnitCost=False,Right_UnitPrice=False</Value>
+          <Value name="Radio Button (299)">False</Value>
+          <Value name="Numeric Up Down (298)">5</Value>
+          <Value name="Radio Button (301)">True</Value>
+          <Value name="Numeric Up Down (300)">5</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="UnitCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Float" />
+            <Field name="UnitPrice" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Float" />
+            <Field name="SalesQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Int32" />
+            <Field name="ReturnQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Int32" />
+            <Field name="ReturnAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="DiscountQuantity" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Int32" />
+            <Field name="DiscountAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="TotalCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="SalesAmount" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Double" />
+            <Field name="Date" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\contoso data\2014 Contoso Data.xlsx|||`FACT Sales$`" type="Date" />
+            <Field name="ChannelName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Channel$`" type="V_String" />
+            <Field name="ProductName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ProductDescription" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_WString" />
+            <Field name="ProductSubcategoryKey" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Int32" />
+            <Field name="Manufacturer" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="BrandName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ClassName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="ColorName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="Size" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="SizeRange" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="Weight" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Double" />
+            <Field name="WeightUnitMeasureID" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="V_String" />
+            <Field name="Right_UnitCost" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Float" />
+            <Field name="Right_UnitPrice" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Product$`" type="Float" />
+            <Field name="ContinentName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="CityName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="StateProvinceName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="RegionCountryName" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\Contoso Lookup Tables.xlsx|||`DIM Geography$`" type="V_String" />
+            <Field name="Name" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Today Date" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="SalesAmount_Tile_Num" source="CrossTab:Header:FieldID:1:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="MultiFieldBinning_v2.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Lenovo\AppData\Local\Temp\Alteryx\Engine_8408_89cce95f0dca4af6a544c42e9241f66d_\Engine_8408_2e1c5d4a1fb537438a416844fc7e69b8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="954" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"UnitCost","UnitPrice","SalesQuantity","ReturnQuantity","ReturnAmount","DiscountQuantity","DiscountAmount","TotalCost","SalesAmount","Date","ChannelName","ProductName","ProductDescription","ProductSubcategoryKey","Manufacturer","BrandName","ClassName","ColorName","Size","SizeRange","Weight","WeightUnitMeasureID","Right_UnitCost","Right_UnitPrice","ContinentName","CityName","StateProvinceName","RegionCountryName","Name","Today Date","SalesAmount_Tile_Num"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1134" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[SalesAmount_Tile_Num] &lt;= 3</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SalesAmount_Tile_Num] &lt;= 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1266" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [ChannelName] = &quot;Online&quot; AND  &#xA;   [SalesAmount_Tile_Num] = 1 THEN &quot;SectionA&quot;&#xA;&#xA;ELSEIF [ChannelName] = &quot;Online&quot; AND &#xA; ([SalesAmount_Tile_Num] = 2 or  &#xA; [SalesAmount_Tile_Num] = 3) &#xA;THEN &quot;SectionB&quot;&#xA;&#xA;ELSEIF [ChannelName] = &quot;Store&quot; AND&#xA;      [SalesAmount_Tile_Num] = 1 &#xA;THEN&#xA;     &quot;SectionC&quot;&#xA;&#xA; ELSE &quot;SectionD&quot; ENDIF" field="Section" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Section = IF [ChannelName] = "Online" AND  
+   [SalesAmount_Tile_Num] = 1 THEN "...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1374" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ChannelName" action="GroupBy" rename="ChannelName" />
+            <SummarizeField field="SalesAmount" action="Sum" rename="Sum_SalesAmount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1374" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CityName" action="GroupBy" rename="CityName" />
+            <SummarizeField field="ChannelName" action="GroupBy" rename="ChannelName" />
+            <SummarizeField field="SalesQuantity" action="Sum" rename="Sum_SalesQuantity" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1386" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ProductName" action="GroupBy" rename="ProductName" />
+            <SummarizeField field="Date" action="Count" rename="Total Sales made" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Alteryx Class 4 A</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="95025f56-0316-4e39-af40-9ef5e11dbe45" />
+      <Telemetry>
+        <PreviousWorkflowId value="3ee515be-b10f-45d2-bed1-ed9721c3e941" />
+        <OriginWorkflowId value="3ee515be-b10f-45d2-bed1-ed9721c3e941" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

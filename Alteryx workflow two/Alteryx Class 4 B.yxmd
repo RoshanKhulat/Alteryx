@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>population-2030-2040.xlsx
+Query=`Query1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LocID" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="Location" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="Time" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="Double" />
+            <Field name="AgeGrp" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="AgeGrpStart" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="Double" />
+            <Field name="AgeGrpSpan" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="PopMale" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="PopFemale" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+            <Field name="PopTotal" size="255" source="File: D:\Alteryx\Alteryx class 3 &amp; 4\population-2030-2040.xlsx|||`Query1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LocID" selected="True" type="Int16" size="2" />
+            <SelectField field="Location" selected="True" />
+            <SelectField field="Time" selected="True" type="Int16" size="2" />
+            <SelectField field="AgeGrp" selected="True" />
+            <SelectField field="AgeGrpStart" selected="True" type="Int16" size="2" />
+            <SelectField field="AgeGrpSpan" selected="True" type="Int16" size="2" />
+            <SelectField field="PopMale" selected="True" type="Int64" size="8" />
+            <SelectField field="PopFemale" selected="True" type="Int64" size="8" />
+            <SelectField field="PopTotal" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="414" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="LocID" action="GroupBy" rename="LocID" />
+            <SummarizeField field="Location" action="GroupBy" rename="Location" />
+            <SummarizeField field="Time" action="GroupBy" rename="Time" />
+            <SummarizeField field="PopMale" action="Sum" rename="Male" />
+            <SummarizeField field="PopFemale" action="Sum" rename="Female" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="LocID" />
+            <Field field="Location" />
+            <Field field="Time" />
+          </KeyFields>
+          <DataFields>
+            <Field field="LocID" selected="False" />
+            <Field field="Location" selected="False" />
+            <Field field="Time" selected="False" />
+            <Field field="Male" selected="True" />
+            <Field field="Female" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="678" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="LocID" />
+            <Field field="Location" />
+            <Field field="Time" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LocID" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="Location" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Time" source="CrossTab:Group:Sum:" type="Int16" />
+            <Field name="Male" source="CrossTab:Header:Name:Male:Sum:" type="Int64" />
+            <Field name="Female" source="CrossTab:Header:Name:Female:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="594" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Location" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Location" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Male" source="CrossTab:Header:Name:Male:Sum:" type="Int64" />
+            <Field name="Female" source="CrossTab:Header:Name:Female:Sum:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Alteryx Class 4 B</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f85fe46a-0c52-40b3-98c7-b99cd5adfe5d" />
+      <Telemetry>
+        <PreviousWorkflowId value="a97c8f50-3525-4f7a-8310-383a8c99fb6d" />
+        <OriginWorkflowId value="a97c8f50-3525-4f7a-8310-383a8c99fb6d" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
